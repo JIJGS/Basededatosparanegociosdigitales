@@ -31,7 +31,18 @@ constraint chk_salario
 check(salario>=400 and salario<=50000)
 )
 
---crear la tabla ventas
-create table tblventa(
-
+--crear la tabla venta
+CREATE TABLE tblventa(
+ventaId int not null,
+fecha date not null,
+clienteId int not null,
+empleadosId int not null,
+constraint pk_tblventa
+primary key(ventaId),
+constraint fk_tblventa_tblcliente
+foreign key(clienteId)
+references tblcliente(clienteId),
+constraint fk_tblventa_tblempleados
+foreign key(empleadosId)
+references tblempleados(empleadosId)
 )
