@@ -1,0 +1,2 @@
+--Notas
+--siempre sedebe empesar a insertar datos donde esta la tabla de la primary key.
