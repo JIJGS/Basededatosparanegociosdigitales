@@ -159,7 +159,8 @@ where CompanyName like '%mer%'
 select * from Customers
 where City like '_ondon'
 
-
+select * from Customers
+where City like '_e_i_o'
 ------
 
 --Seleccionar todos los clientes con una ciudad que comience 
